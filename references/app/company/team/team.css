@@ -1,0 +1,439 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "PP Neue Montreal";
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+section {
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Team Hero Section */
+.team-hero {
+  background-color: #2a1f1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 60vh;
+}
+
+.team-hero h1 {
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 1;
+  font-family: "Instrumental";
+  font-style: italic;
+  color: #faf6f0;
+  margin-bottom: 1rem;
+}
+
+.team-hero .subtitle {
+  font-family: "Nippo";
+  font-size: 1.2rem;
+  color: #c4b59c;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  opacity: 0.8;
+}
+
+/* Team Grid Section */
+.team-grid {
+  background-color: #2a1f1a;
+  padding: 4rem 0;
+  min-height: auto;
+}
+
+.team-members {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.team-member-card {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  background-color: #202020;
+  border-radius: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.team-member-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+  background-color: #2a2a2a;
+}
+
+.member-image {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.member-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.team-member-card:hover .member-image img {
+  transform: scale(1.05);
+}
+
+.member-info {
+  padding: 1.5rem;
+  background-color: #202020;
+  color: #faf6f0;
+}
+
+.member-name {
+  font-family: "Instrumental";
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #faf6f0;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-style: italic;
+}
+
+.member-role {
+  font-family: "Instrumental";
+  font-size: 0.9rem;
+  color: #c4b59c;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  opacity: 0.8;
+  font-style: italic;
+}
+
+/* Responsive breakpoints for team grid */
+@media (max-width: 1200px) {
+  .team-members {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .team-hero h1 {
+    font-size: 3rem;
+  }
+
+  .team-hero .subtitle {
+    font-size: 1rem;
+  }
+
+  .team-members {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .team-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .team-hero .subtitle {
+    font-size: 0.9rem;
+  }
+
+  .team-members {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+  }
+
+  .member-image {
+    height: 350px;
+  }
+}
+
+@media (max-width: 576px) {
+  .team-hero h1 {
+    font-size: 2rem;
+  }
+
+  .team-hero .subtitle {
+    font-size: 0.8rem;
+  }
+
+  .team-members {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .member-image {
+    height: 400px;
+  }
+
+  .member-info {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .team-hero h1 {
+    font-size: 1.75rem;
+  }
+
+  .team-hero .subtitle {
+    font-size: 0.75rem;
+  }
+
+  .member-image {
+    height: 350px;
+  }
+}
+
+/* Outro Section */
+.outro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 4rem 0;
+  background-color: #2a1f1a;
+  color: #faf6f0;
+  min-height: 40vh;
+}
+
+.outro h2 {
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 1;
+  font-family: "Instrumental";
+  font-style: italic;
+}
+
+/* Next Team Section */
+.next-team {
+  position: relative;
+  width: 100vw;
+  overflow-x: hidden;
+  gap: 1em;
+  background-color: #2a1f1a;
+  z-index: 20;
+  min-height: 100vh;
+}
+
+.next-team-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #c4b59c;
+  z-index: -1;
+  clip-path: polygon(5% 0,
+      94% 0,
+      100% 15%,
+      100% 85%,
+      95% 100%,
+      5% 100%,
+      0 85%,
+      0 15%);
+}
+
+.marquee-team {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.25;
+  z-index: 1;
+}
+
+.next-team .container {
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: transparent;
+  gap: 1em;
+  position: relative;
+  z-index: 2;
+}
+
+.next-team .primary {
+  font-family: "Nippo";
+  font-size: 1rem;
+  color: #c4b59c;
+  text-transform: uppercase;
+}
+
+.next-team-img {
+  width: 35%;
+  height: 300px;
+  clip-path: polygon(0 0,
+      90% 0,
+      100% 15%,
+      100% 80%,
+      100% 100%,
+      5% 100%,
+      0 90%,
+      0% 20%);
+}
+
+.next-team-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.next-team h2 {
+  width: 50%;
+  font-family: "Instrumental";
+  font-size: 4rem;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: -0.15rem;
+  font-style: italic;
+  color: #faf6f0;
+}
+
+.final-cta-buttons {
+  display: flex;
+  gap: 1.5em;
+  justify-content: center;
+  margin-top: 2em;
+}
+
+/* CTA Buttons */
+.cta-primary,
+.cta-secondary {
+  padding: 0.75em 2em;
+  text-decoration: none;
+  font-family: "Nippo";
+  font-weight: 500;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.cta-primary {
+  background-color: #f9f3c0;
+  color: #2a1f1a;
+}
+
+.cta-primary:hover {
+  background-color: #faf6f0;
+  color: #2a1f1a;
+}
+
+.cta-secondary {
+  border: 1px solid #faf6f0;
+  color: #faf6f0;
+  background-color: transparent;
+}
+
+.cta-secondary:hover {
+  background-color: #c4b59c;
+  color: #faf6f0;
+}
+
+/* Tablet Landscape (768px - 991px) */
+@media (max-width: 991px) {
+  .next-team h2 {
+    font-family: "Instrumental";
+    font-size: 3.5rem;
+    font-weight: 400;
+    font-style: italic;
+    width: 60%;
+  }
+
+  .next-team-img {
+    width: 40%;
+  }
+}
+
+/* Tablet Portrait & Large Mobile (576px - 767px) */
+@media (max-width: 767px) {
+  .next-team h2 {
+    font-size: 3rem;
+    width: 70%;
+  }
+
+  .next-team-img {
+    width: 70%;
+  }
+
+  .next-team-bg {
+    clip-path: polygon(5% 0,
+        95% 0,
+        100% 5%,
+        100% 95%,
+        95% 100%,
+        5% 100%,
+        0 95%,
+        0 5%);
+  }
+
+  .final-cta-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25em;
+  }
+}
+
+/* Small Mobile (480px - 575px) */
+@media (max-width: 575px) {
+  .next-team h2 {
+    font-size: 2.5rem;
+    width: 85%;
+  }
+
+  .next-team-img {
+    width: 85%;
+    height: 250px;
+  }
+
+  .final-cta-buttons {
+    gap: 1em;
+  }
+}
+
+/* Extra Small Mobile (320px - 479px) */
+@media (max-width: 479px) {
+  .next-team h2 {
+    font-size: 2rem;
+    width: 95%;
+    letter-spacing: -0.1rem;
+  }
+
+  .next-team-img {
+    width: 95%;
+    height: 200px;
+  }
+
+  .final-cta-buttons {
+    gap: 0.75em;
+  }
+}

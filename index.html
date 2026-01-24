@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kenesis Vision | Episodic Intelligence for Enterprise</title>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <meta name="author" content="Kenesis Labs Private Limited" />
+  <meta name="description"
+    content="Kenesis Vision is a software platform that powers context-aware, memory-driven AI for enterprises. Transform work experience into machine-usable intelligence." />
+  <meta name="keywords"
+    content="Kenesis, Smart Glasses, Computer Vision, AI, Assistive Technology, Accessibility, Chennai, India" />
+
+  <link rel="stylesheet" href="/globals.css" />
+  <link rel="stylesheet" href="/css/nav.css" />
+  <link rel="stylesheet" href="/css/interactive-grid.css" />
+  <link rel="stylesheet" href="/css/transition.css" />
+  <link rel="stylesheet" href="/css/preloader.css" />
+  <link rel="stylesheet" href="/css/home.css" />
+  <link rel="stylesheet" href="/css/footer.css" />
+</head>
+
+<body>
+  <div class="preloader-overlay">
+    <div class="preloader-grid"></div>
+
+    <div class="preloader-animation-wrapper">
+      <p class="preloader-text">Initializing Vision</p>
+      <div class="preloader-ring-frame"></div>
+      <div class="preloader-disc-frame"></div>
+    </div>
+  </div>
+
+  <svg style="visibility: hidden; position: absolute" width="0" height="0" xmlns="http://www.w3.org/2000/svg"
+    version="1.1">
+    <defs>
+      <filter id="goo">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur" />
+        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+        <feComposite in="SourceGraphic" in2="goo" operator="atop" />
+      </filter>
+    </defs>
+  </svg>
+
+  <div class="interactive-grid"></div>
+
+  <div class="transition-grid"></div>
+
+  <nav>
+    <div class="nav-container">
+      <div class="nav-bg"></div>
+    </div>
+
+    <div class="nav-mobile-header">
+      <p class="nav-logo">Kenesis</p>
+      <p class="nav-menu-toggle">Menu</p>
+    </div>
+
+    <div class="nav-overlay">
+      <div class="nav-items">
+        <div class="nav-item"><a href="/">Home</a></div>
+        <div class="nav-item"><a href="/about">About</a></div>
+        <div class="nav-item"><a href="/products">Products</a></div>
+        <div class="nav-item"><a href="/platform">Platform</a></div>
+        <div class="nav-item"><a href="/contact">Contact</a></div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-container">
+      <div class="hero-img-container">
+        <div class="hero-img">
+          <video autoplay loop muted playsinline poster="/images/home/home2.webp">
+            <source src="/images/home/hero1.mp4" type="video/mp4" />
+            <source src="/images/home/hero2.mp4" type="video/mp4" />
+            <!-- Fallback for browsers that don't support video -->
+            <img src="/images/home/home2.webp" alt="Kenesis Vision - Episodic Intelligence for Enterprise" />
+          </video>
+        </div>
+
+        <div class="hero-img-overlay"></div>
+
+        <div class="hero-img-gradient"></div>
+      </div>
+
+      <div class="hero-content">
+        <div class="container">
+          <div class="hero-content-nav">
+            <div class="hero-timer">
+              <p>Enterprise AI __ 2025</p>
+            </div>
+          </div>
+
+          <div class="hero-content-header">
+            <h1 data-animate-variant="slide" data-animate-delay="0.6">
+              Episodic Intelligence<br />for Enterprise
+            </h1>
+          </div>
+
+          <div class="hero-content-footer">
+            <div class="hero-footer-copy">
+              <p class="bodyCopy" data-animate-variant="slide" data-animate-delay="0.75">
+                Kenesis Vision turns lived work experience into machine-usable
+                intelligence. Predict errors, accelerate training, improve quality,
+                and retain critical knowledge — at scale.
+              </p>
+            </div>
+
+            <div class="hero-callout">
+              <p data-animate-variant="flicker" data-animate-delay="0.85">
+                Context-Aware AI
+              </p>
+              <p data-animate-variant="flicker" data-animate-delay="1">
+                Memory-Driven Intelligence
+              </p>
+            </div>
+
+            <div class="hero-cta-buttons" data-animate-variant="slide" data-animate-delay="1.1">
+              <a href="/contact" class="btn btn-teal"><span class="btn-line"></span>Schedule a Demo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="intro">
+    <div class="container">
+      <div class="stats-container">
+        <div class="stat">
+          <div class="stat-copy">
+            <div class="stats-copy-label">
+              <p>Industries</p>
+            </div>
+            <div class="stats-copy-count">
+              <h3>4</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="stat">
+          <div class="stat-copy">
+            <div class="stats-copy-label">
+              <p>Core Capabilities</p>
+            </div>
+            <div class="stats-copy-count">
+              <h3>6</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="stat">
+          <div class="stat-copy">
+            <div class="stats-copy-label">
+              <p>Enterprise Partners</p>
+            </div>
+            <div class="stats-copy-count">
+              <h3>5</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="stat">
+          <div class="stat-copy">
+            <div class="stats-copy-label">
+              <p>Privacy-First</p>
+            </div>
+            <div class="stats-copy-count">
+              <h3>100%</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="intro-header">
+        <h1 data-animate-variant="slide" data-animate-on-scroll="true">
+          From Perception to Understanding
+        </h1>
+      </div>
+
+      <div class="intro-copy">
+        <div class="intro-copy-wrapper">
+          <h3>
+            Most AI systems see the world as images or events. Humans experience
+            it as episodes. Kenesis Vision brings this same structure to AI —
+            converting first-person perception into episodic memory that
+            machines can reason over.
+          </h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="featured-missions-header">
+    <h1 data-animate-variant="slide" data-animate-on-scroll="true">
+      Enterprise <br />
+      Solutions
+    </h1>
+  </section>
+
+  <section class="featured-missions">
+    <div class="featured-missions-list">
+      <a href="/products" class="featured-missions-item">
+        <p>01 / 04</p>
+        <h3>Manufacturing Intelligence</h3>
+        <div class="featured-mission-item-img">
+          <img src="/images/product/visionhero.webp" alt="Manufacturing Intelligence" />
+        </div>
+        <p>[ Assembly & Quality ]</p>
+      </a>
+
+      <a href="/platform" class="featured-missions-item">
+        <p>02 / 04</p>
+        <h3>Field Service Operations</h3>
+        <div class="featured-mission-item-img">
+          <img src="/images/platform/platformhero.png" alt="Field Service Operations" />
+        </div>
+        <p>[ Technician Support ]</p>
+      </a>
+
+      <a href="/platform" class="featured-missions-item">
+        <p>03 / 04</p>
+        <h3>Training & Development</h3>
+        <div class="featured-mission-item-img">
+          <img src="/images/platform/devv.png" alt="Training Development" />
+        </div>
+        <p>[ Skill Validation ]</p>
+      </a>
+
+      <a href="/platform" class="featured-missions-item">
+        <p>04 / 04</p>
+        <h3>Compliance & Safety</h3>
+        <div class="featured-mission-item-img">
+          <img src="/images/product/creative.png" alt="Compliance Safety" />
+        </div>
+        <p>[ Audit Readiness ]</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- Waitlist Section for Startup Singam -->
+  <section class="waitlist-section" id="waitlist">
+    <div class="container">
+      <div class="waitlist-content">
+        <div class="waitlist-header">
+          <p data-animate-variant="flicker" data-animate-on-scroll="true">[ Early Access ]</p>
+          <h1 data-animate-variant="slide" data-animate-on-scroll="true">
+            Join the Waitlist
+          </h1>
+        </div>
+
+        <div class="waitlist-copy">
+          <h3>
+            Be among the first to experience Kenesis Vision. Get early access,
+            exclusive updates, and priority onboarding for your enterprise.
+          </h3>
+        </div>
+
+        <form id="waitlistForm" class="waitlist-form">
+          <div class="waitlist-form-row">
+            <input type="text" name="name" id="waitlistName" placeholder="Your Name" required />
+            <input type="email" name="email" id="waitlistEmail" placeholder="Your Email" required />
+          </div>
+          <div class="waitlist-form-row">
+            <input type="text" name="company" id="waitlistCompany" placeholder="Company Name" />
+            <select name="interest" id="waitlistInterest">
+              <option value="">Select Interest Area</option>
+              <option value="manufacturing">Manufacturing</option>
+              <option value="field_service">Field Service</option>
+              <option value="training">Training & Development</option>
+              <option value="compliance">Compliance & Safety</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="waitlist-form-submit">
+            <button type="submit" class="btn btn-teal" id="waitlistSubmit">
+              <span class="btn-line"></span>Join Waitlist
+            </button>
+          </div>
+          <p id="waitlistMessage" class="waitlist-message"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="cta-content">
+      <div class="cta-logo">
+        <img src="/images/home/kenlogo.png" alt="Kenesis Logo" />
+      </div>
+
+      <div class="cta-copy">
+        <h2 style="margin-bottom: 1rem; color: var(--base-500);">Interested to Know More?</h2>
+        <p class="bodyCopy lg">
+          Ready to transform how your organization captures and uses operational
+          intelligence? Schedule a demo to see Kenesis Vision in action.
+        </p>
+      </div>
+
+      <div class="cta-buttons" style="display: flex; justify-content: center;">
+        <a href="/contact" class="btn btn-teal"><span class="btn-line"></span>Schedule a Demo</a>
+      </div>
+    </div>
+
+    <div class="cta-row">
+      <div class="cta-card cta-card-left">
+        <div class="cta-card-frame">
+          <div class="cta-card-img">
+            <img src="/images/product/scene.webp" alt="Scene Recognition" />
+          </div>
+          <div class="cta-card-gradient"></div>
+        </div>
+      </div>
+
+      <div class="cta-card cta-card-right">
+        <div class="cta-card-frame">
+          <div class="cta-card-img">
+            <img src="/images/product/edge.webp" alt="Edge AI Processing" />
+          </div>
+          <div class="cta-card-gradient"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cta-row">
+      <div class="cta-card cta-card-left">
+        <div class="cta-card-frame">
+          <div class="cta-card-img">
+            <img src="/images/platform/agri.png" alt="Agriculture AI" />
+          </div>
+          <div class="cta-card-gradient"></div>
+        </div>
+      </div>
+
+      <div class="cta-card cta-card-right">
+        <div class="cta-card-frame">
+          <div class="cta-card-img">
+            <img src="/images/platform/med.png" alt="Medical AI" />
+          </div>
+          <div class="cta-card-gradient"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cta-row">
+      <div class="cta-card cta-card-left">
+        <div class="cta-card-frame">
+          <div class="cta-card-img">
+            <img src="/images/product/field.png" alt="Field Work" />
+          </div>
+          <div class="cta-card-gradient"></div>
+        </div>
+      </div>
+
+      <div class="cta-card cta-card-right">
+        <div class="cta-card-frame">
+          <div class="cta-card-img">
+            <img src="/images/product/access.png" alt="Accessibility" />
+          </div>
+          <div class="cta-card-gradient"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partners Section -->
+  <section class="intro" style="padding-top: 0;">
+    <div class="container">
+      <div class="intro-header">
+        <h1 data-animate-variant="slide" data-animate-on-scroll="true">
+          We Are Backed By
+        </h1>
+      </div>
+
+      <div class="stats-container" style="justify-content: center; gap: 3rem; flex-wrap: wrap;">
+        <div class="stat" style="flex: 0 0 auto;">
+          <div class="stat-copy">
+            <img src="/images/home/rajalakshmi.PNG" alt="Rajalakshmi Innovation Center"
+              style="max-height: 60px; width: auto; filter: brightness(0) invert(1);" />
+          </div>
+        </div>
+
+        <div class="stat" style="flex: 0 0 auto;">
+          <div class="stat-copy">
+            <img src="/images/home/iTNT.png" alt="iTamilnadu Technology Hub"
+              style="max-height: 60px; width: auto; filter: brightness(0) invert(1);" />
+          </div>
+        </div>
+
+        <div class="stat" style="flex: 0 0 auto;">
+          <div class="stat-copy">
+            <img src="/images/home/Forge.png" alt="Forge Innovation Ventures"
+              style="max-height: 60px; width: auto; filter: brightness(0) invert(1);" />
+          </div>
+        </div>
+
+        <div class="stat" style="flex: 0 0 auto;">
+          <div class="stat-copy">
+            <img src="/images/home/aws_startup.png" alt="AWS for Startups"
+              style="max-height: 60px; width: auto; filter: brightness(0) invert(1);" />
+          </div>
+        </div>
+
+        <div class="stat" style="flex: 0 0 auto;">
+          <div class="stat-copy">
+            <img src="/images/home/zoho.png" alt="Zoho for Startups"
+              style="max-height: 60px; width: auto; filter: brightness(0) invert(1);" />
+          </div>
+        </div>
+      </div>
+
+      <div class="intro-copy">
+        <div class="intro-copy-wrapper">
+          <h3 style="text-align: center;">
+            Trusted by leading programs and ecosystems
+          </h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-bg-container"></div>
+
+      <div class="footer-content">
+        <div class="footer-content-meta">
+          <div class="footer-content-col">
+            <h3>Let's build the future together</h3>
+
+            <div class="footer-form">
+              <input type="text" placeholder="Your Email" />
+
+              <div class="btn">
+                <a href="/contact" class="btn"><span class="btn-line"></span>Get in Touch</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-content-col">
+            <p class="bodyCopy">
+              Kenesis Labs is a deep tech startup specializing in computer
+              vision and smartglasses technology for assistive tech solutions.
+              Based in Chennai, India, we're building intelligent technology
+              that empowers independence.
+            </p>
+
+            <div class="footer-socials">
+              <div class="footer-social">
+                <a href="https://www.instagram.com/kenesislabs" target="_blank">[ Instagram ]</a>
+              </div>
+              <div class="footer-social">
+                <a href="http://x.com/KenesisLabs" target="_blank">[ Twitter / X ]</a>
+              </div>
+              <div class="footer-social">
+                <a href="https://www.linkedin.com/company/thekenesis" target="_blank">[ LinkedIn ]</a>
+              </div>
+              <div class="footer-social">
+                <a href="mailto:contact@kenesis.in">[ Email ]</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-content-meta">
+          <div class="footer-content-col">
+            <p>[ Chennai, India ]</p>
+            <p>[ contact@kenesis.in ]</p>
+          </div>
+
+          <div class="footer-content-col">
+            <h1>Kenesis&copy;</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      if (sessionStorage.getItem("pageTransition") === "true") {
+        let s = document.createElement("style");
+        s.setAttribute("data-transition", "");
+        s.textContent =
+          ".transition-grid{background-color:var(--base-400);pointer-events:auto;}";
+        (document.head || document.documentElement).appendChild(s);
+      }
+    })();
+  </script>
+
+  <script type="module" src="/js/lenis-scroll.js"></script>
+  <script type="module" src="/js/preloader.js"></script>
+  <script type="module" src="/js/nav.js"></script>
+  <script type="module" src="/js/interactive-grid.js"></script>
+  <script type="module" src="/js/transition.js"></script>
+  <script type="module" src="/js/home.js"></script>
+  <script type="module" src="/js/cta.js"></script>
+  <script type="module" src="/js/animated-copy.js"></script>
+  <script type="module" src="/js/waitlist.js"></script>
+</body>
+
+</html>

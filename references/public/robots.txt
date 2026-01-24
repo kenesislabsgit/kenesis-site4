@@ -1,0 +1,43 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://kenesis.in/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
+
+# Disallow admin and private areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /static/
+
+# Allow important pages
+Allow: /
+Allow: /product
+Allow: /platform
+Allow: /company/
+Allow: /contact
+Allow: /about
+Allow: /team
+Allow: /careers
+
+# Google specific
+User-agent: Googlebot
+Allow: /
+
+# Bing specific
+User-agent: Bingbot
+Allow: /
+
+# Social media bots
+User-agent: Twitterbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: LinkedInBot
+Allow: / 
