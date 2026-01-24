@@ -11,7 +11,7 @@
  */
 
 // API Configuration - Update this for production
-const API_BASE_URL = 'http://localhost:8000';
+const API_BASE_URL = 'https://ken-forms.onrender.com';
 const WAITLIST_ENDPOINT = `${API_BASE_URL}/waitlist`;
 
 document.addEventListener('DOMContentLoaded', function () {
