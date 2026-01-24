@@ -104,9 +104,17 @@ p.bodyCopy.lg {
 
 .btn {
   display: inline-block;
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
 }
 
-a.btn {
+a.btn,
+button.btn {
   position: relative;
   width: max-content;
   min-width: 200px;
@@ -121,14 +129,19 @@ a.btn {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  text-transform: uppercase;
+  font-family: "Geist Mono", monospace;
+  font-size: clamp(0.8rem, 0.75vw, 0.85rem);
 }
 
-a.btn > *:not(.btn-line) {
+a.btn>*:not(.btn-line),
+button.btn>*:not(.btn-line) {
   position: relative;
   z-index: 1;
 }
 
-a.btn:before {
+a.btn:before,
+button.btn:before {
   content: "";
   position: absolute;
   top: 0;
@@ -140,7 +153,8 @@ a.btn:before {
   transition: all 0.3s ease;
 }
 
-a.btn:after {
+a.btn:after,
+button.btn:after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -152,27 +166,32 @@ a.btn:after {
   transition: all 0.3s ease;
 }
 
-a.btn:hover {
+a.btn:hover,
+button.btn:hover {
   color: var(--base-100);
   border: solid 1px var(--base-300);
   text-shadow: 0 0 10px rgba(242, 238, 218, 0.2);
 }
 
-a.btn:hover:before {
+a.btn:hover:before,
+button.btn:hover:before {
   left: 0;
   width: 20px;
 }
 
-a.btn:hover:after {
+a.btn:hover:after,
+button.btn:hover:after {
   right: 0;
   width: 20px;
 }
 
-a.btn:hover .btn-line:before {
+a.btn:hover .btn-line:before,
+button.btn:hover .btn-line:before {
   bottom: -1px;
 }
 
-a.btn:hover .btn-line:after {
+a.btn:hover .btn-line:after,
+button.btn:hover .btn-line:after {
   top: -1px;
 }
 

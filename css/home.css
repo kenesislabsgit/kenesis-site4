@@ -54,6 +54,24 @@
   object-fit: cover;
 }
 
+/* Default state (Desktop): Show video, hide mobile image */
+.hero .hero-container .hero-img-container .hero-img .mobile-image {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+
+/* Mobile state: Hide video, show mobile image */
+@media (max-width: 768px) {
+  .hero .hero-container .hero-img-container .hero-img .desktop-video {
+    display: none;
+  }
+
+  .hero .hero-container .hero-img-container .hero-img .mobile-image {
+    display: block;
+  }
+}
+
 .hero .hero-container .hero-img-container .hero-img-overlay {
   position: absolute;
   top: 0;
@@ -178,15 +196,18 @@
 }
 
 /* Teal button - uses the navbar teal color */
+/* Teal button - uses the navbar teal color */
 .btn-teal,
-a.btn.btn-teal {
+a.btn.btn-teal,
+button.btn.btn-teal {
   background-color: var(--base-500);
   color: var(--base-400);
   border: none;
 }
 
 .btn-teal:hover,
-a.btn.btn-teal:hover {
+a.btn.btn-teal:hover,
+button.btn.btn-teal:hover {
   background-color: #3d8a85;
   color: var(--base-400);
   transform: translateY(-2px);
