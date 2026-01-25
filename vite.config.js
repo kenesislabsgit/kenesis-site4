@@ -10,6 +10,7 @@ export default defineConfig({
         products: resolve(__dirname, "products.html"),
         platform: resolve(__dirname, "platform.html"),
         contact: resolve(__dirname, "contact.html"),
+        waitlist: resolve(__dirname, "waitlist.html"),
       },
     },
     assetsInclude: [
