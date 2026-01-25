@@ -336,8 +336,8 @@ button.btn.btn-teal:hover {
 .intro {
   position: relative;
   width: 100%;
-  height: 100%;
-  overflow: hidden;
+  height: auto;
+  overflow: visible;
 }
 
 .intro .container {
@@ -606,20 +606,47 @@ button.btn.btn-teal:hover {
     text-align: center;
   }
 
-  .hero .hero-container .hero-content .container .hero-content-nav div:nth-child(1),
-  .hero .hero-container .hero-content .container .hero-content-footer div:nth-child(1) {
+  .hero .hero-container .hero-content .container .hero-content-nav div:nth-child(1) {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  .hero .hero-container .hero-content .container .hero-content-footer .hero-footer-copy p {
-    width: 90%;
-    margin: 0 auto;
+  /* Stack footer content vertically on mobile */
+  .hero .hero-container .hero-content .container .hero-content-footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
   }
 
+  /* Remove flex ratios on mobile */
+  .hero .hero-container .hero-content .container .hero-content-footer>div {
+    flex: none !important;
+    width: 100%;
+  }
+
+  /* Full width paragraph */
+  .hero .hero-container .hero-content .container .hero-content-footer .hero-footer-copy {
+    order: 1;
+  }
+
+  .hero .hero-container .hero-content .container .hero-content-footer .hero-footer-copy p {
+    width: 100%;
+    text-align: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+  }
+
+  /* Hide the callout section completely on mobile */
   .hero .hero-container .hero-content .container .hero-content-footer .hero-callout {
-    display: none;
+    display: none !important;
+    visibility: hidden;
+  }
+
+  /* CTA buttons at the bottom */
+  .hero .hero-container .hero-content .container .hero-content-footer .hero-cta-buttons {
+    order: 2;
   }
 
   .hero-cta-buttons {
@@ -671,5 +698,140 @@ button.btn.btn-teal:hover {
 
   .cta .cta-content .cta-copy {
     width: 100%;
+  }
+}
+
+/* Small mobile screens */
+@media (max-width: 480px) {
+  .hero {
+    padding: 0.5rem;
+  }
+
+  .hero .hero-container .hero-content .container {
+    padding: 4rem 0.75rem 3rem 0.75rem;
+  }
+
+  /* Make hero headings bigger on mobile */
+  .hero .hero-container .hero-content .container .hero-content-header h1 {
+    font-size: clamp(3.5rem, 15vw, 6rem);
+  }
+
+  .hero .hero-container .hero-content .container .hero-content-footer .hero-footer-copy p {
+    width: 100%;
+    font-size: 0.875rem;
+    line-height: 1.4;
+    padding: 0 0.5rem;
+  }
+
+  .hero-cta-buttons {
+    margin-top: 1.5rem;
+  }
+
+  .intro .container .stats-container {
+    gap: 0.75rem;
+    margin-bottom: 3rem;
+  }
+
+  .intro .container .stats-container .stat {
+    padding: 1rem;
+  }
+
+  .intro .container .stats-container .stat .stat-copy {
+    gap: 1.5rem;
+  }
+
+  .intro .container .intro-header {
+    width: 100%;
+  }
+
+  .featured-missions-header {
+    height: 50svh;
+    min-height: 300px;
+  }
+
+  .featured-missions-header h1 {
+    font-size: 15vw;
+  }
+
+  .featured-missions {
+    padding: 4rem 0.75rem;
+  }
+
+  .featured-missions .featured-missions-list {
+    gap: 3rem;
+  }
+
+  .featured-missions .featured-missions-list .featured-missions-item {
+    padding: 2rem 1rem;
+    gap: 1rem;
+  }
+
+  .waitlist-section {
+    padding: 3rem 0.5rem;
+  }
+
+  .waitlist-form-row input,
+  .waitlist-form-row select {
+    padding: 0.875rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  .cta .cta-content {
+    top: 35%;
+  }
+
+  .cta .cta-content .cta-logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .cta .cta-content .cta-copy {
+    margin: 1rem 0 2rem 0;
+    padding: 1rem;
+  }
+
+  .cta .cta-content .cta-copy p.bodyCopy {
+    font-size: 0.9rem;
+    line-height: 1.3;
+  }
+
+  .cta .cta-row {
+    gap: 0.75rem;
+    padding: 0 0.75rem;
+    margin: 0.5rem 0;
+  }
+
+  .cta .cta-row .cta-card {
+    height: 150px;
+  }
+
+  /* Partners/Backed By section on small screens */
+  .stats-container[style*="justify-content: center"] {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem !important;
+    justify-items: center;
+  }
+
+  .stats-container[style*="justify-content: center"] .stat {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0.75rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 0.5rem;
+  }
+
+  .stats-container[style*="justify-content: center"] .stat img {
+    max-height: 45px !important;
+    max-width: 100%;
+    object-fit: contain;
+  }
+
+  /* Center the last logo if it's alone on its row (odd number of logos) */
+  .stats-container[style*="justify-content: center"] .stat:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    max-width: 50%;
+    margin: 0 auto;
   }
 }

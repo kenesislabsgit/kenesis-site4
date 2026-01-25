@@ -40,7 +40,8 @@ h3 {
   text-transform: uppercase;
   font-family: "SCHABO", sans-serif;
   font-weight: 500;
-  line-height: 0.85;
+  line-height: 1;
+  padding-top: 0.15em;
 }
 
 h1 {
@@ -237,4 +238,54 @@ button.btn:hover .btn-line:after {
 .line {
   position: relative;
   will-change: transform;
+}
+
+/* Mobile responsive improvements */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  a.btn,
+  button.btn {
+    min-width: 160px;
+    height: 55px;
+    padding: 0 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0.75rem;
+  }
+
+  h1 {
+    font-size: clamp(2.5rem, 12vw, 4rem);
+  }
+
+  h2 {
+    font-size: clamp(2rem, 10vw, 3.25rem);
+  }
+
+  h3 {
+    font-size: clamp(1.5rem, 8vw, 2.5rem);
+  }
+
+  a.btn,
+  button.btn {
+    min-width: 140px;
+    height: 50px;
+    padding: 0 1.25rem;
+    font-size: 0.75rem;
+  }
+
+  a.btn:before,
+  button.btn:before {
+    width: 40px;
+  }
+
+  a.btn:after,
+  button.btn:after {
+    width: 40px;
+  }
 }

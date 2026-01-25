@@ -9,11 +9,9 @@
 
 .hero.hero-observatory .hero-container .hero-img-container .hero-img-gradient {
   background: rgb(0, 0, 0);
-  background: linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 0.25) 0%,
-    rgba(0, 0, 0, 0) 100%
-  );
+  background: linear-gradient(0deg,
+      rgba(0, 0, 0, 0.25) 0%,
+      rgba(0, 0, 0, 0) 100%);
   z-index: 1;
 }
 
@@ -50,24 +48,22 @@
   width: 100%;
   height: 100%;
   background-color: var(--base-300);
-  clip-path: polygon(
-    4rem 0px,
+  clip-path: polygon(4rem 0px,
 
-    calc(50% - 15rem) 0px,
-    calc(50% - 13.5rem) 2.75rem,
-    calc(50% + 13.5rem) 2.75rem,
-    calc(50% + 15rem) 0px,
+      calc(50% - 15rem) 0px,
+      calc(50% - 13.5rem) 2.75rem,
+      calc(50% + 13.5rem) 2.75rem,
+      calc(50% + 15rem) 0px,
 
-    calc(100% - 4rem) 0px,
-    100% 4rem,
+      calc(100% - 4rem) 0px,
+      100% 4rem,
 
-    100% calc(100% - 4rem),
-    calc(100% - 4rem) 100%,
+      100% calc(100% - 4rem),
+      calc(100% - 4rem) 100%,
 
-    4rem 100%,
-    0px calc(100% - 4rem),
-    0px 4rem
-  );
+      4rem 100%,
+      0px calc(100% - 4rem),
+      0px 4rem);
 }
 
 .routine .routine-container .routine-copy {
@@ -99,12 +95,7 @@
   overflow: hidden;
 }
 
-.routine
-  .routine-container
-  .routine-copy
-  .container
-  .routine-progress-bar
-  .routine-progress {
+.routine .routine-container .routine-copy .container .routine-progress-bar .routine-progress {
   position: absolute;
   top: 0;
   left: 0;
@@ -122,12 +113,7 @@
   overflow: hidden;
 }
 
-.routine
-  .routine-container
-  .routine-copy
-  .container
-  .routine-slider
-  .routine-slider-wrapper {
+.routine .routine-container .routine-copy .container .routine-slider .routine-slider-wrapper {
   position: relative;
   width: 350%;
   height: 100%;
@@ -137,88 +123,51 @@
   will-change: transform;
 }
 
-.routine
-  .routine-container
-  .routine-copy
-  .container
-  .routine-slider
-  .routine-slider-wrapper
-  .routine-block {
+.routine .routine-container .routine-copy .container .routine-slider .routine-slider-wrapper .routine-block {
   position: relative;
   flex: 1;
   width: 100%;
   height: 100%;
   background-color: #303030;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   border-radius: 0.75rem;
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow: hidden;
 }
 
-.routine
-  .routine-container
-  .routine-copy
-  .container
-  .routine-slider
-  .routine-slider-wrapper
-  .routine-block
-  .routine-block-header,
-.routine
-  .routine-container
-  .routine-copy
-  .container
-  .routine-slider
-  .routine-slider-wrapper
-  .routine-block
-  .routine-block-footer {
+.routine .routine-container .routine-copy .container .routine-slider .routine-slider-wrapper .routine-block .routine-block-header,
+.routine .routine-container .routine-copy .container .routine-slider .routine-slider-wrapper .routine-block .routine-block-footer {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  position: relative;
+  z-index: 1;
 }
 
-.routine
-  .routine-container
-  .routine-copy
-  .container
-  .routine-slider
-  .routine-slider-wrapper
-  .routine-block
-  .routine-block-header {
-  align-items: flex-start;
+.routine .routine-container .routine-copy .container .routine-slider .routine-slider-wrapper .routine-block .routine-block-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0.7) 100%);
+  z-index: 0;
 }
 
-.routine
-  .routine-container
-  .routine-copy
-  .container
-  .routine-slider
-  .routine-slider-wrapper
-  .routine-block
-  .routine-block-footer {
+.routine .routine-container .routine-copy .container .routine-slider .routine-slider-wrapper .routine-block .routine-block-footer {
   align-items: flex-end;
 }
 
-.routine
-  .routine-container
-  .routine-copy
-  .container
-  .routine-slider
-  .routine-slider-wrapper
-  .routine-block
-  .routine-block-header
-  p:nth-child(2) {
+.routine .routine-container .routine-copy .container .routine-slider .routine-slider-wrapper .routine-block .routine-block-header p:nth-child(2) {
   color: var(--base-200);
 }
 
-.routine
-  .routine-container
-  .routine-copy
-  .container
-  .routine-slider
-  .routine-slider-wrapper
-  .routine-block
-  .routine-icon {
+.routine .routine-container .routine-copy .container .routine-slider .routine-slider-wrapper .routine-block .routine-icon {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -228,15 +177,7 @@
   aspect-ratio: 1;
 }
 
-.routine
-  .routine-container
-  .routine-copy
-  .container
-  .routine-slider
-  .routine-slider-wrapper
-  .routine-block
-  .routine-icon
-  img {
+.routine .routine-container .routine-copy .container .routine-slider .routine-slider-wrapper .routine-block .routine-icon img {
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -398,53 +339,29 @@
     align-items: flex-end;
   }
 
-  .routine
-    .routine-container
-    .routine-copy
-    .container
-    .routine-slider
-    .routine-slider-wrapper {
+  .routine .routine-container .routine-copy .container .routine-slider .routine-slider-wrapper {
     width: calc(600% + 7.5rem);
   }
 
-  .routine
-    .routine-container
-    .routine-copy
-    .container
-    .routine-slider
-    .routine-slider-wrapper
-    .routine-block
-    .routine-block-header,
-  .routine
-    .routine-container
-    .routine-copy
-    .container
-    .routine-slider
-    .routine-slider-wrapper
-    .routine-block
-    .routine-block-footer {
+  .routine .routine-container .routine-copy .container .routine-slider .routine-slider-wrapper .routine-block .routine-block-header,
+  .routine .routine-container .routine-copy .container .routine-slider .routine-slider-wrapper .routine-block .routine-block-footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
   }
 
-  .routine
-    .routine-container
-    .routine-copy
-    .container
-    .routine-slider
-    .routine-slider-wrapper
-    .routine-block
-    .routine-block-footer
-    p:nth-child(2) {
+  .routine .routine-container .routine-copy .container .routine-slider .routine-slider-wrapper .routine-block .routine-block-footer p:nth-child(2) {
     display: none;
   }
 
   .about .container .about-header .about-header-row:nth-child(2) {
     padding-left: 0;
-    flex-direction: column;
-    align-items: flex-end;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.5rem;
   }
 
   .about .container .about-map {
@@ -475,5 +392,108 @@
 
   .team .team-counter .counter-title h1 {
     font-size: clamp(4.5rem, 10vw, 10rem);
+  }
+}
+
+/* Small mobile screens */
+@media (max-width: 480px) {
+  .hero.hero-observatory .hero-container .hero-content .container {
+    padding: 4rem 0.75rem 3rem 0.75rem;
+  }
+
+  .intro.intro-observatory {
+    margin: 2rem 0;
+  }
+
+  .routine {
+    height: auto;
+    min-height: 100svh;
+  }
+
+  .routine .routine-container .routine-copy .container {
+    padding: 4rem 0.75rem 1rem 0.75rem;
+  }
+
+  .routine .routine-container .routine-copy .container .routine-header {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .routine .routine-container .routine-copy .container .routine-slider {
+    height: calc(100% - 8rem);
+  }
+
+  .about .container .about-header .about-header-row:nth-child(4) {
+    padding-left: 0;
+  }
+
+  /* Fix "Our Vision" text layout on mobile - all left aligned */
+  .about .container .about-header {
+    gap: 0;
+  }
+
+  .about .container .about-header .about-header-row {
+    flex-wrap: wrap;
+    justify-content: flex-start !important;
+    padding: 0 !important;
+    padding-left: 0 !important;
+    gap: 0 0.5rem;
+  }
+
+  /* Force row 2 (Vision Is A) left aligned */
+  .about .container .about-header .about-header-row:nth-child(2) {
+    justify-content: flex-start !important;
+    padding-left: 0 !important;
+  }
+
+  /* Force row 3 (World Where) left aligned */
+  .about .container .about-header .about-header-row:nth-child(3) {
+    justify-content: flex-start !important;
+  }
+
+  .about .container .about-header .about-header-row h1 {
+    font-size: clamp(2rem, 10vw, 3.5rem);
+  }
+
+  .about .container .about-map {
+    width: 100%;
+    margin: 1rem auto;
+  }
+
+  .team {
+    height: auto;
+    min-height: 100svh;
+  }
+
+  .team .team-counter {
+    margin: 4rem 0.75rem 1rem 0.75rem;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .team .team-counter .count {
+    height: 80px;
+    padding-right: 0;
+  }
+
+  .team .team-counter .count .count-container {
+    transform: translateY(80px);
+  }
+
+  .team .team-counter h1 {
+    font-size: 80px;
+  }
+
+  .team .cards {
+    top: 30%;
+  }
+
+  .team .cards .card {
+    width: 280px;
+    height: 380px;
+  }
+
+  .team .cards .card .card-content h3 {
+    font-size: clamp(1.1rem, 5vw, 1.5rem);
   }
 }

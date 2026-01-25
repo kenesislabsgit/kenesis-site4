@@ -6,6 +6,7 @@ let lenis = null;
 
 document.addEventListener("DOMContentLoaded", () => {
   initLenisScroll();
+  initSmoothAnchorLinks();
 });
 
 // lenis scroll - smooth scroll initialization
@@ -25,6 +26,22 @@ function initLenisScroll() {
   gsap.ticker.lagSmoothing(0);
 
   window.lenis = lenis;
+}
+
+// Smooth scroll for anchor links using Lenis
+function initSmoothAnchorLinks() {
+  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+    anchor.addEventListener("click", function (e) {
+      const targetId = this.getAttribute("href");
+      if (targetId && targetId !== "#") {
+        const targetElement = document.querySelector(targetId);
+        if (targetElement && lenis) {
+          e.preventDefault();
+          lenis.scrollTo(targetElement, { duration: 1.2 });
+        }
+      }
+    });
+  });
 }
 
 export { lenis };

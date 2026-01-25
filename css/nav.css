@@ -132,3 +132,29 @@ nav .nav-overlay {
     padding: 0.5rem 0.25rem;
   }
 }
+
+/* Small mobile screens */
+@media (max-width: 480px) {
+  nav {
+    top: 1rem;
+    width: calc(100% - 2rem);
+    max-width: none;
+  }
+
+  nav .nav-mobile-header {
+    padding: 0 0.5rem;
+  }
+
+  nav .nav-mobile-header p {
+    font-size: 0.85rem;
+  }
+
+  nav .nav-items {
+    padding: 1.5rem 0 0.75rem 0;
+  }
+
+  nav .nav-item a {
+    padding: 0.75rem 0.5rem;
+    font-size: 0.9rem;
+  }
+}
