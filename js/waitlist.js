@@ -28,12 +28,11 @@ document.addEventListener('DOMContentLoaded', function () {
         const formData = {
             name: document.getElementById('waitlistName').value.trim(),
             email: document.getElementById('waitlistEmail').value.trim(),
-            company: document.getElementById('waitlistCompany').value.trim() || null,
-            interest: document.getElementById('waitlistInterest').value || null
+            phone: document.getElementById('waitlistPhone').value.trim()
         };
 
         // Validate required fields
-        if (!formData.name || !formData.email) {
+        if (!formData.name || !formData.email || !formData.phone) {
             showMessage('Please fill in all required fields.', 'error');
             return;
         }
@@ -47,6 +46,12 @@ document.addEventListener('DOMContentLoaded', function () {
         // Validate email format
         if (!isValidEmail(formData.email)) {
             showMessage('Please enter a valid email address.', 'error');
+            return;
+        }
+
+        // Validate phone format (basic validation)
+        if (formData.phone.length < 10) {
+            showMessage('Please enter a valid phone number.', 'error');
             return;
         }
 

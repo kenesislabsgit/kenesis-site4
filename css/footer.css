@@ -119,6 +119,14 @@ footer .footer-content-meta:nth-child(2) p {
   flex: 1;
 }
 
+.footer-copyright-text {
+  font-size: 0.8rem;
+  opacity: 0.7;
+  margin-top: 0.5rem;
+  font-family: "Geist Mono", monospace;
+  text-transform: uppercase;
+}
+
 @media (max-width: 1000px) {
   footer .footer-bg-container {
     clip-path: none;
@@ -165,11 +173,14 @@ footer .footer-content-meta:nth-child(2) p {
     height: auto;
     min-height: auto;
     max-height: none;
+    padding-bottom: 2rem;
   }
 
   footer .footer-content {
+    position: relative;
     padding: 4rem 1rem 2rem 1rem;
     gap: 2rem;
+    height: auto;
   }
 
   footer .footer-content-col h3 {
@@ -225,6 +236,7 @@ footer .footer-content-meta:nth-child(2) p {
   }
 
   footer .footer-content-meta:nth-child(2) .footer-content-col:nth-child(2) h1 {
-    font-size: clamp(2.5rem, 12vw, 4rem);
+    font-size: clamp(1rem, 5vw, 1.5rem);
+    line-height: 1.2;
   }
 }
