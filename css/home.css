@@ -659,6 +659,8 @@ button.btn.btn-teal:hover {
     width: 100%;
     text-align: center;
     justify-content: center;
+    position: relative;
+    z-index: 10;
   }
 
   .intro .container .stats-container {

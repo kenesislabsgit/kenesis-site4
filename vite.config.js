@@ -21,4 +21,20 @@ export default defineConfig({
     ],
     copyPublicDir: true,
   },
+  plugins: [
+    {
+      name: "html-rewrite",
+      configureServer(server) {
+        server.middlewares.use((req, res, next) => {
+          if (!req.url.endsWith(".html") && req.url !== "/") {
+            const htmlUrl = req.url + ".html";
+            if (require("fs").existsSync(resolve(__dirname, "." + htmlUrl))) {
+              req.url = htmlUrl;
+            }
+          }
+          next();
+        });
+      },
+    },
+  ],
 });
