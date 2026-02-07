@@ -65,7 +65,7 @@ function initSlideAnimation(element, isPreloaderShowing, heroContent) {
       if (animateOnScroll) {
         ScrollTrigger.create({
           trigger: element,
-          start: "top 70%",
+          start: "top 85%", // Trigger earlier on mobile
           animation: animation,
           toggleActions: "play none none none",
         });
