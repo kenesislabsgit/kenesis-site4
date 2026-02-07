@@ -1,0 +1,525 @@
+/* observatory - hero section */
+.hero.hero-observatory {
+  height: 100svh;
+}
+
+.hero.hero-observatory .hero-container .hero-img-container .hero-img {
+  filter: saturate(0);
+}
+
+.hero.hero-observatory .hero-container .hero-img-container .hero-img-gradient {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg,
+      rgba(0, 0, 0, 0.25) 0%,
+      rgba(0, 0, 0, 0) 100%);
+  z-index: 1;
+}
+
+.hero.hero-observatory .hero-container .hero-content .container {
+  color: var(--base-100);
+}
+
+/* observatory - intro section */
+.intro.intro-observatory {
+  margin: 3rem 0;
+}
+
+/* observatory - routine section */
+.routine {
+  position: relative;
+  width: 100%;
+  height: 100svh;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.routine .routine-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  filter: url("#goo");
+}
+
+.routine .routine-container .routine-bg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: var(--base-300);
+  clip-path: polygon(4rem 0px,
+
+      calc(50% - 15rem) 0px,
+      calc(50% - 13.5rem) 2.75rem,
+      calc(50% + 13.5rem) 2.75rem,
+      calc(50% + 15rem) 0px,
+
+      calc(100% - 4rem) 0px,
+      100% 4rem,
+
+      100% calc(100% - 4rem),
+      calc(100% - 4rem) 100%,
+
+      4rem 100%,
+      0px calc(100% - 4rem),
+      0px 4rem);
+}
+
+.routine .routine-container .routine-copy {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.routine .routine-container .routine-copy .container {
+  padding: 6rem;
+}
+
+.routine .routine-container .routine-copy .container .routine-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.routine .routine-container .routine-copy .container .routine-progress-bar {
+  position: relative;
+  width: 100%;
+  height: 0.25rem;
+  background-color: #3f3f3f;
+  margin: 1.5rem 0;
+  overflow: hidden;
+}
+
+.routine .routine-container .routine-copy .container .routine-progress-bar .routine-progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--base-500);
+  transform: scaleX(0);
+  transform-origin: left;
+  will-change: transform;
+}
+
+.routine .routine-container .routine-copy .container .routine-slider {
+  width: 100%;
+  height: calc(100% - 10rem);
+  overflow: hidden;
+}
+
+.routine .routine-container .routine-copy .container .routine-slider .routine-slider-wrapper {
+  position: relative;
+  width: 350%;
+  height: 100%;
+  transform: translateX(0%);
+  display: flex;
+  gap: 1.5rem;
+  will-change: transform;
+}
+
+.routine .routine-container .routine-copy .container .routine-slider .routine-slider-wrapper .routine-block {
+  position: relative;
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  background-color: #303030;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.routine .routine-container .routine-copy .container .routine-slider .routine-slider-wrapper .routine-block .routine-block-header,
+.routine .routine-container .routine-copy .container .routine-slider .routine-slider-wrapper .routine-block .routine-block-footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+}
+
+.routine .routine-container .routine-copy .container .routine-slider .routine-slider-wrapper .routine-block .routine-block-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0.7) 100%);
+  z-index: 0;
+}
+
+.routine .routine-container .routine-copy .container .routine-slider .routine-slider-wrapper .routine-block .routine-block-footer {
+  align-items: flex-end;
+}
+
+.routine .routine-container .routine-copy .container .routine-slider .routine-slider-wrapper .routine-block .routine-block-header p:nth-child(2) {
+  color: var(--base-200);
+}
+
+.routine .routine-container .routine-copy .container .routine-slider .routine-slider-wrapper .routine-block .routine-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  min-width: 5rem;
+  aspect-ratio: 1;
+}
+
+.routine .routine-container .routine-copy .container .routine-slider .routine-slider-wrapper .routine-block .routine-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* observatory - about section */
+.about {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.about .container .about-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.about .container .about-header .about-header-row {
+  display: flex;
+}
+
+.about .container .about-header .about-header-row:nth-child(2) {
+  justify-content: space-around;
+  padding-left: 10rem;
+}
+
+.about .container .about-header .about-header-row:nth-child(3) {
+  justify-content: space-between;
+}
+
+.about .container .about-header .about-header-row:nth-child(4) {
+  justify-content: center;
+  padding-left: 4rem;
+}
+
+.about .container .about-map {
+  width: 75%;
+  margin: 2rem auto;
+  height: 100%;
+}
+
+/* observatory - team section */
+.team {
+  position: relative;
+  width: 100%;
+  height: 100svh;
+  overflow: hidden;
+  /* Prevent margin collapse which causes jump on pin */
+  padding-top: 1px;
+  margin-top: -1px;
+  /* Fixed intersection by ensuring proper stacking, but keeping transparent for grid */
+  z-index: 10;
+  /* Boost z-index to stay above previous content */
+  /* Ensure it sits above previous content during scroll */
+  will-change: transform;
+  transform: translate3d(0, 0, 0);
+}
+
+.team .team-counter {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  gap: 1.5rem;
+  justify-content: space-between;
+  margin-top: 0;
+  padding: 1.5rem;
+}
+
+.team .team-counter .counter-title h2 {
+  position: relative;
+  top: 0.75rem;
+  line-height: 1 !important;
+  /* increased from 0.85 */
+  padding-bottom: 0.2em;
+  /* add some padding to prevent bottom clipping */
+}
+
+.team .team-counter .count {
+  position: relative;
+  width: max-content;
+  height: 150px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  overflow: hidden;
+}
+
+.team .team-counter .count .count-container {
+  position: relative;
+  transform: translateY(150px);
+  will-change: transform;
+}
+
+.team .team-counter .counter-number {
+  width: 100%;
+  position: relative;
+  text-transform: uppercase;
+  font-family: "SCHABO", sans-serif;
+  /* Explicitly add font since it's no longer H1 */
+  font-weight: 500;
+  padding-top: 0.15em;
+  font-size: 150px;
+  line-height: 1;
+  will-change: transform;
+}
+
+.team .cards {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150vw;
+  height: 600px;
+  will-change: transform;
+}
+
+.team .cards .card {
+  position: absolute;
+  width: 425px;
+  height: 575px;
+  left: 50%;
+  top: 50%;
+  transform-origin: center center;
+  margin-left: -250px;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  will-change: transform;
+}
+
+.team .cards .card .card-img {
+  flex: 1;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.team .cards .card .card-img img {
+  filter: saturate(0) sepia(1) brightness(0.85);
+}
+
+.team .cards .card .card-content {
+  width: 100%;
+  height: 60px;
+}
+
+.team .cards .card .card-content h3 {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  letter-spacing: clamp(0rem, -0.5vw, -0.05rem);
+  margin-bottom: 0.5rem;
+  color: var(--base-100);
+}
+
+.team .cards .card .card-content p {
+  color: var(--base-200);
+}
+
+.team .empty {
+  opacity: 0;
+}
+
+/* observatory - media queries */
+@media (max-width: 1000px) {
+  .intro.intro-observatory .container .intro-copy {
+    flex-direction: column;
+  }
+
+  .routine .routine-container .routine-bg {
+    clip-path: none;
+  }
+
+  .routine .routine-container .routine-copy .container {
+    padding: 6rem 1rem 1rem 1rem;
+  }
+
+  .routine .routine-container .routine-copy .container .routine-header {
+    align-items: flex-end;
+  }
+
+  .routine .routine-container .routine-copy .container .routine-slider .routine-slider-wrapper {
+    width: calc(600% + 7.5rem);
+  }
+
+  .routine .routine-container .routine-copy .container .routine-slider .routine-slider-wrapper .routine-block .routine-block-header,
+  .routine .routine-container .routine-copy .container .routine-slider .routine-slider-wrapper .routine-block .routine-block-footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .routine .routine-container .routine-copy .container .routine-slider .routine-slider-wrapper .routine-block .routine-block-footer p:nth-child(2) {
+    display: none;
+  }
+
+  .about .container .about-header .about-header-row:nth-child(2) {
+    padding-left: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .about .container .about-map {
+    width: 100%;
+  }
+
+  .team .team-counter {
+    margin: 6rem 1rem 1rem 1rem;
+    padding: 0;
+  }
+
+  .team .team-counter .counter-title {
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  .team .team-counter .count {
+    padding-right: 2rem;
+  }
+
+  .team .cards {
+    top: 27.5%;
+  }
+
+  .team .cards .card {
+    width: 375px;
+    height: 500px;
+  }
+
+  .team .team-counter .counter-title h2 {
+    font-size: clamp(4.5rem, 10vw, 10rem);
+  }
+}
+
+/* Small mobile screens */
+@media (max-width: 480px) {
+  .hero.hero-observatory .hero-container .hero-content .container {
+    padding: 4rem 0.75rem 3rem 0.75rem;
+  }
+
+  .intro.intro-observatory {
+    margin: 2rem 0;
+  }
+
+  .routine {
+    height: auto;
+    min-height: 100svh;
+  }
+
+  .routine .routine-container .routine-copy .container {
+    padding: 4rem 0.75rem 1rem 0.75rem;
+  }
+
+  .routine .routine-container .routine-copy .container .routine-header {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .routine .routine-container .routine-copy .container .routine-slider {
+    height: calc(100% - 8rem);
+  }
+
+  .about .container .about-header .about-header-row:nth-child(4) {
+    padding-left: 0;
+  }
+
+  /* Fix "Our Vision" text layout on mobile - all left aligned */
+  .about .container .about-header {
+    gap: 0;
+  }
+
+  .about .container .about-header .about-header-row {
+    flex-wrap: wrap;
+    justify-content: flex-start !important;
+    padding: 0 !important;
+    padding-left: 0 !important;
+    gap: 0 0.5rem;
+  }
+
+  /* Force row 2 (Vision Is A) left aligned */
+  .about .container .about-header .about-header-row:nth-child(2) {
+    justify-content: flex-start !important;
+    padding-left: 0 !important;
+  }
+
+  /* Force row 3 (World Where) left aligned */
+  .about .container .about-header .about-header-row:nth-child(3) {
+    justify-content: flex-start !important;
+  }
+
+  .about .container .about-header .about-header-row h2 {
+    font-size: clamp(2rem, 10vw, 3.5rem);
+  }
+
+  .about .container .about-map {
+    width: 100%;
+    margin: 1rem auto;
+  }
+
+  .team {
+    height: auto;
+    min-height: 100svh;
+  }
+
+  .team .team-counter {
+    margin: 4rem 0.75rem 1rem 0.75rem;
+    flex-direction: row;
+    /* Allow side-by-side */
+    justify-content: space-between;
+    /* Spread apart: Our Team (left) ... Counter (right) */
+    align-items: flex-start;
+    /* Align top of title and counter */
+    gap: 1.5rem;
+  }
+
+  .team .team-counter .count {
+    height: 80px;
+    padding-right: 0;
+    /* Ensure counter is visible */
+    z-index: 2;
+  }
+
+  /* ... (rest of counter styles) ... */
+
+  .team .team-counter .counter-number {
+    font-size: 60px;
+    /* Reduce slightly to fit better if needed, originally 80px */
+  }
+
+  .team .cards {
+    top: 40%;
+    /* Move down slightly to clear counter if needed */
+  }
+
+  .team .cards .card {
+    width: 280px;
+    height: 380px;
+    /* Center usage: left: 50% + margin-left: -half_width */
+    margin-left: -140px;
+  }
+
+  .team .cards .card .card-content h3 {
+    font-size: clamp(1.1rem, 5vw, 1.5rem);
+  }
+}

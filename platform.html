@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Platform | Kenesis Vision | Enterprise AI Infrastructure</title>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <meta name="author" content="Kenesis Labs Private Limited" />
+  <meta name="description"
+    content="Kenesis Platform - AI APIs and developer ecosystem for contextual intelligence. Build vision AI applications with our reasoning APIs and domain modules." />
+
+  <link rel="stylesheet" href="/globals.css" />
+  <link rel="stylesheet" href="/css/nav.css" />
+  <link rel="stylesheet" href="/css/interactive-grid.css" />
+  <link rel="stylesheet" href="/css/transition.css" />
+  <link rel="stylesheet" href="/css/preloader.css" />
+  <link rel="stylesheet" href="/css/home.css" />
+  <link rel="stylesheet" href="/css/footer.css" />
+
+  <style>
+    .platform-section {
+      padding: 4rem 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .platform-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .platform-card {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 1.5rem;
+      transition: all 0.3s ease;
+    }
+
+    .platform-card:hover {
+      background: rgba(255, 255, 255, 0.05);
+      border-color: rgba(255, 255, 255, 0.2);
+      transform: translateY(-4px);
+    }
+
+    .platform-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+
+    .platform-card h3 {
+      margin-bottom: 0.5rem;
+    }
+
+    .platform-card p {
+      opacity: 0.7;
+      font-size: 0.9rem;
+    }
+
+    .api-feature {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      padding: 1rem 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .api-feature:last-child {
+      border-bottom: none;
+    }
+
+    .api-number {
+      font-size: 2rem;
+      font-weight: bold;
+      opacity: 0.3;
+      min-width: 60px;
+    }
+
+    .api-content h4 {
+      margin-bottom: 0.5rem;
+    }
+
+    .api-content p {
+      opacity: 0.7;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="preloader-overlay">
+    <div class="preloader-grid"></div>
+
+    <div class="preloader-animation-wrapper">
+      <p class="preloader-text">Loading Platform</p>
+      <div class="preloader-ring-frame"></div>
+      <div class="preloader-disc-frame"></div>
+    </div>
+  </div>
+
+  <svg style="visibility: hidden; position: absolute" width="0" height="0" xmlns="http://www.w3.org/2000/svg"
+    version="1.1">
+    <defs>
+      <filter id="goo">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur" />
+        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+        <feComposite in="SourceGraphic" in2="goo" operator="atop" />
+      </filter>
+    </defs>
+  </svg>
+
+  <div class="interactive-grid"></div>
+
+  <div class="transition-grid"></div>
+
+  <nav>
+    <div class="nav-container">
+      <div class="nav-bg"></div>
+    </div>
+
+    <div class="nav-mobile-header">
+      <p class="nav-logo">Kenesis</p>
+      <p class="nav-menu-toggle">Menu</p>
+    </div>
+
+    <div class="nav-overlay">
+      <div class="nav-items">
+        <div class="nav-item"><a href="/">Home</a></div>
+        <div class="nav-item"><a href="/about">About</a></div>
+        <div class="nav-item"><a href="/products">Products</a></div>
+        <div class="nav-item"><a href="/platform">Platform</a></div>
+        <div class="nav-item"><a href="/contact">Contact</a></div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-container">
+      <div class="hero-img-container">
+        <div class="hero-img">
+          <img src="/images/platform/platformhero.png" alt="Kenesis Platform" />
+        </div>
+
+        <div class="hero-img-overlay"></div>
+
+        <div class="hero-img-gradient"></div>
+      </div>
+
+      <div class="hero-content">
+        <div class="container">
+          <div class="hero-content-nav">
+            <div class="hero-timer">
+              <p>Platform __ APIs</p>
+            </div>
+          </div>
+
+          <div class="hero-content-header">
+            <h1 data-animate-variant="slide" data-animate-delay="0.6">
+              Vision<br />Platform
+            </h1>
+          </div>
+
+          <div class="hero-content-footer">
+            <div class="hero-footer-copy">
+              <p class="bodyCopy" data-animate-variant="slide" data-animate-delay="0.75">
+                The Contextual AI Backbone — APIs & Developer Ecosystem.
+                Build reasoning-powered, camera-first applications that don't
+                just detect, but interpret and act.
+              </p>
+            </div>
+
+            <div class="hero-callout">
+              <p data-animate-variant="flicker" data-animate-delay="0.85">
+                Reasoning APIs
+              </p>
+              <p data-animate-variant="flicker" data-animate-delay="1">
+                Edge-First Architecture
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core APIs Section -->
+  <section class="platform-section">
+    <div class="container">
+      <h1 data-animate-variant="slide" data-animate-on-scroll="true" style="margin-bottom: 1rem;">
+        Core Reasoning APIs
+      </h1>
+      <p class="bodyCopy" style="margin-bottom: 2rem; max-width: 600px;">
+        Context Intelligence, Not Just Detection. Transformer-powered inference
+        under 100ms. Edge-first, cloud-optional. Privacy by design.
+      </p>
+
+      <div class="api-feature">
+        <div class="api-number">01</div>
+        <div class="api-content">
+          <h4>Scene Understanding API</h4>
+          <p>
+            Goes beyond object detection to understand context and relationships.
+            Knows the difference between "a cup on a desk" and "a meeting in progress".
+          </p>
+        </div>
+      </div>
+
+      <div class="api-feature">
+        <div class="api-number">02</div>
+        <div class="api-content">
+          <h4>Memory & Pattern API</h4>
+          <p>
+            Remembers patterns over time and builds contextual understanding.
+            Learn user preferences and anticipate needs based on history.
+          </p>
+        </div>
+      </div>
+
+      <div class="api-feature">
+        <div class="api-number">03</div>
+        <div class="api-content">
+          <h4>Proactive Action API</h4>
+          <p>
+            Suggests actions before you need them based on context.
+            Moves from reactive to proactive assistance seamlessly.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Domain Modules Section -->
+  <section class="platform-section">
+    <div class="container">
+      <h1 data-animate-variant="slide" data-animate-on-scroll="true" style="margin-bottom: 1rem;">
+        Domain Modules
+      </h1>
+      <p class="bodyCopy" style="margin-bottom: 2rem; max-width: 600px;">
+        Pre-tuned vertical reasoners for enterprise. Industry-specific reasoning
+        modules built on our core APIs — plug directly into your operations.
+      </p>
+
+      <div class="platform-grid">
+        <div class="platform-card">
+          <img src="/images/platform/agri.png" alt="Agriculture AI" />
+          <h3>Agriculture</h3>
+          <p>Crop monitoring, pest detection, harvest estimation</p>
+        </div>
+
+        <div class="platform-card">
+          <img src="/images/platform/med.png" alt="Medical AI" />
+          <h3>Medical</h3>
+          <p>Surgery overlay, patient vitals, diagnostic annotation</p>
+        </div>
+
+        <div class="platform-card">
+          <img src="/images/platform/edu.png" alt="Education AI" />
+          <h3>Education</h3>
+          <p>Smart note-taking, whiteboard capture, explainers</p>
+        </div>
+
+        <div class="platform-card">
+          <img src="/images/platform/logi.png" alt="Logistics AI" />
+          <h3>Logistics</h3>
+          <p>Package scans, inventory detection, bin mapping</p>
+        </div>
+
+        <div class="platform-card">
+          <img src="/images/platform/retail.png" alt="Retail AI" />
+          <h3>Retail</h3>
+          <p>Label recognition, shelf alerts, store analytics</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Devverse Section -->
+  <section class="platform-section">
+    <div class="container">
+      <h1 data-animate-variant="slide" data-animate-on-scroll="true" style="margin-bottom: 1rem;">
+        Kenesis Devverse
+      </h1>
+      <p class="bodyCopy" style="margin-bottom: 2rem; max-width: 600px;">
+        The Builder Playground — SDKs, Kits, and Community. Open innovation engine
+        for hackers, student teams, and emerging AI developers. The Raspberry Pi of vision AI.
+      </p>
+
+      <div style="display: flex; gap: 2rem; flex-wrap: wrap; align-items: center;">
+        <div style="flex: 1; min-width: 300px;">
+          <div class="api-feature">
+            <div class="api-number">→</div>
+            <div class="api-content">
+              <h4>Dev Kits</h4>
+              <p>Camera + compute module + battery starter kits</p>
+            </div>
+          </div>
+
+          <div class="api-feature">
+            <div class="api-number">→</div>
+            <div class="api-content">
+              <h4>Platform SDKs</h4>
+              <p>Raspberry Pi, Jetson Nano, ESP32-CAM, and mobile</p>
+            </div>
+          </div>
+
+          <div class="api-feature">
+            <div class="api-number">→</div>
+            <div class="api-content">
+              <h4>Visual Debug Tool</h4>
+              <p>Scene graph visualizer and memory tracker for AI flows</p>
+            </div>
+          </div>
+
+          <div class="api-feature">
+            <div class="api-number">→</div>
+            <div class="api-content">
+              <h4>Community Hub</h4>
+              <p>Templates, challenges, and open-source project showcase</p>
+            </div>
+          </div>
+        </div>
+
+        <div style="flex: 1; min-width: 300px;">
+          <img src="/images/platform/devv.png" alt="Devverse Tools" style="width: 100%; border-radius: 12px;" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Personal Intelligence Section -->
+  <section class="platform-section" style="border-bottom: none;">
+    <div class="container">
+      <h1 data-animate-variant="slide" data-animate-on-scroll="true" style="margin-bottom: 1rem;">
+        Kenesis Personal Intelligence
+      </h1>
+      <p class="bodyCopy" style="margin-bottom: 2rem; max-width: 600px;">
+        Dual App Suite: Everyday Context AI + Accessibility OS. Two-part consumer
+        suite that brings our tech to the people.
+      </p>
+
+      <div class="platform-grid">
+        <div class="platform-card">
+          <h3>Kenesis Lens</h3>
+          <p>
+            Visual journaling, smart summaries, whiteboard capture.
+            Everyday insights for mainstream personal use.
+          </p>
+        </div>
+
+        <div class="platform-card">
+          <h3>Kenesis Assist</h3>
+          <p>
+            Live narration, object guidance, episodic memory for blind users.
+            Full integration with NVDA/JAWS, haptics, and voice queries.
+          </p>
+        </div>
+
+        <div class="platform-card">
+          <h3>Pricing</h3>
+          <p>
+            Freemium model with Pro features (₹199/mo). NGO distribution
+            program for accessibility markets.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-bg-container"></div>
+
+      <div class="footer-content">
+        <div class="footer-content-meta">
+          <div class="footer-content-col">
+            <h3>Ready to build with contextual intelligence?</h3>
+
+            <div class="footer-form">
+              <input type="text" placeholder="Your Email" />
+
+              <div class="btn">
+                <a href="/contact" class="btn"><span class="btn-line"></span>Request API Access</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-content-col">
+            <p class="bodyCopy">
+              Kenesis Labs is a deep tech startup specializing in computer
+              vision and smartglasses technology for assistive tech solutions.
+              Based in Chennai, India, we're building intelligent technology
+              that empowers independence.
+            </p>
+
+            <div class="footer-socials">
+              <div class="footer-social">
+                <a href="https://www.instagram.com/kenesislabs" target="_blank">[ Instagram ]</a>
+              </div>
+              <div class="footer-social">
+                <a href="http://x.com/KenesisLabs" target="_blank">[ Twitter / X ]</a>
+              </div>
+              <div class="footer-social">
+                <a href="https://www.linkedin.com/company/thekenesis" target="_blank">[ LinkedIn ]</a>
+              </div>
+              <div class="footer-social">
+                <a href="mailto:contact@kenesis.in">[ Email ]</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-content-meta">
+          <div class="footer-content-col">
+            <p>[ Chennai, India ]</p>
+            <p>[ contact@kenesis.in ]</p>
+          </div>
+
+          <div class="footer-content-col">
+            <h1>Kenesis&copy;</h1>
+            <p class="footer-copyright-text">Copyright 2026 All Rights Reserved By Kenesis Labs Private Limited</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      if (sessionStorage.getItem("pageTransition") === "true") {
+        let s = document.createElement("style");
+        s.setAttribute("data-transition", "");
+        s.textContent =
+          ".transition-grid{background-color:var(--base-400);pointer-events:auto;}";
+        (document.head || document.documentElement).appendChild(s);
+      }
+    })();
+  </script>
+
+  <script type="module" src="/js/lenis-scroll.js"></script>
+  <script type="module" src="/js/preloader.js"></script>
+  <script type="module" src="/js/nav.js"></script>
+  <script type="module" src="/js/interactive-grid.js"></script>
+  <script type="module" src="/js/transition.js"></script>
+  <script type="module" src="/js/home.js"></script>
+  <script type="module" src="/js/animated-copy.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solutions | Kenesis Vision | Enterprise Intelligence</title>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <meta name="author" content="Kenesis Labs Private Limited" />
+  <meta name="description"
+    content="Enterprise solutions powered by Kenesis Vision: Manufacturing Intelligence, Field Service Operations, Training & Development, and Compliance & Safety." />
+
+  <link rel="stylesheet" href="/globals.css" />
+  <link rel="stylesheet" href="/css/nav.css" />
+  <link rel="stylesheet" href="/css/interactive-grid.css" />
+  <link rel="stylesheet" href="/css/transition.css" />
+  <link rel="stylesheet" href="/css/preloader.css" />
+  <link rel="stylesheet" href="/css/home.css" />
+  <link rel="stylesheet" href="/css/footer.css" />
+  <link rel="stylesheet" href="/css/expedition.css" />
+</head>
+
+<body>
+  <div class="preloader-overlay">
+    <div class="preloader-grid"></div>
+
+    <div class="preloader-animation-wrapper">
+      <p class="preloader-text">Loading Products</p>
+      <div class="preloader-ring-frame"></div>
+      <div class="preloader-disc-frame"></div>
+    </div>
+  </div>
+
+  <svg style="visibility: hidden; position: absolute" width="0" height="0" xmlns="http://www.w3.org/2000/svg"
+    version="1.1">
+    <defs>
+      <filter id="goo">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur" />
+        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+        <feComposite in="SourceGraphic" in2="goo" operator="atop" />
+      </filter>
+    </defs>
+  </svg>
+
+  <div class="interactive-grid"></div>
+
+  <div class="transition-grid"></div>
+
+  <nav>
+    <div class="nav-container">
+      <div class="nav-bg"></div>
+    </div>
+
+    <div class="nav-mobile-header">
+      <p class="nav-logo">Kenesis</p>
+      <p class="nav-menu-toggle">Menu</p>
+    </div>
+
+    <div class="nav-overlay">
+      <div class="nav-items">
+        <div class="nav-item"><a href="/">Home</a></div>
+        <div class="nav-item"><a href="/about">About</a></div>
+        <div class="nav-item"><a href="/products">Products</a></div>
+        <div class="nav-item"><a href="/platform">Platform</a></div>
+        <div class="nav-item"><a href="/contact">Contact</a></div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-container">
+      <div class="hero-img-container">
+        <div class="hero-img">
+          <img src="/images/product/visionhero.webp" alt="Kenesis Vision Smart Glasses" />
+        </div>
+
+        <div class="hero-img-overlay"></div>
+
+        <div class="hero-img-gradient"></div>
+      </div>
+
+      <div class="hero-content">
+        <div class="container">
+          <div class="hero-content-nav">
+            <div class="hero-timer">
+              <p>Product __ Vision</p>
+            </div>
+          </div>
+
+          <div class="hero-content-header">
+            <h1 data-animate-variant="slide" data-animate-delay="0.6">
+              Enterprise<br />Solutions
+            </h1>
+          </div>
+
+          <div class="hero-content-footer">
+            <div class="hero-footer-copy">
+              <p class="bodyCopy" data-animate-variant="slide" data-animate-delay="0.75">
+                Kenesis Vision enables enterprises to reduce variability,
+                accelerate training, and retain institutional knowledge through
+                episodic intelligence powered by first-person data.
+              </p>
+            </div>
+
+            <div class="hero-callout">
+              <p data-animate-variant="flicker" data-animate-delay="0.85">
+                Edge AI Processing
+              </p>
+              <p data-animate-variant="flicker" data-animate-delay="1">
+                Privacy First
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="expeditions">
+    <p data-animate-variant="flicker" data-animate-on-scroll="true">
+      Industry Solutions
+    </p>
+
+    <div class="expeditions-list">
+      <!-- Feature 1: Scene Recognition -->
+      <div class="expedition-item" style="padding: 2rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">
+        <div class="container" style="display: flex; gap: 2rem; align-items: center; flex-wrap: wrap;">
+          <div style="flex: 1; min-width: 300px;">
+            <h2 style="margin-bottom: 1rem;">Manufacturing Intelligence</h2>
+            <p class="bodyCopy">
+              Reduce variability and rework by understanding assembly as a
+              sequence of intent-driven actions. Detect skipped steps, predict
+              quality failures, and provide real-time corrective guidance.
+            </p>
+          </div>
+          <div style="flex: 1; min-width: 300px;">
+            <img src="/images/product/scene.webp" alt="Scene Recognition" style="width: 100%; border-radius: 8px;"
+              loading="lazy" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Feature 2: Text Detection & Translation -->
+      <div class="expedition-item" style="padding: 2rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">
+        <div class="container" style="display: flex; gap: 2rem; align-items: center; flex-wrap: wrap;">
+          <div style="flex: 1; min-width: 300px;">
+            <img src="/images/product/text.webp" alt="Text Detection" style="width: 100%; border-radius: 8px;"
+              loading="lazy" />
+          </div>
+          <div style="flex: 1; min-width: 300px;">
+            <h2 style="margin-bottom: 1rem;">Field Service Operations</h2>
+            <p class="bodyCopy">
+              Capture real service episodes and turn them into actionable
+              intelligence. Infer troubleshooting intent, predict next steps,
+              and build a living knowledge base from successful repairs.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Feature 3: Task-Aware Overlays -->
+      <div class="expedition-item" style="padding: 2rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">
+        <div class="container" style="display: flex; gap: 2rem; align-items: center; flex-wrap: wrap;">
+          <div style="flex: 1; min-width: 300px;">
+            <h2 style="margin-bottom: 1rem;">Training & Development</h2>
+            <p class="bodyCopy">
+              Measure competence, not just completion. Compare trainees against
+              expert baselines, identify specific skill gaps, and certify
+              readiness based on evidence, not time.
+            </p>
+          </div>
+          <div style="flex: 1; min-width: 300px;">
+            <img src="/images/product/task.webp" alt="Task Overlays" style="width: 100%; border-radius: 8px;"
+              loading="lazy" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Feature 4: Edge AI Processing -->
+      <div class="expedition-item" style="padding: 2rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">
+        <div class="container" style="display: flex; gap: 2rem; align-items: center; flex-wrap: wrap;">
+          <div style="flex: 1; min-width: 300px;">
+            <img src="/images/product/edge.webp" alt="Edge AI" style="width: 100%; border-radius: 8px;"
+              loading="lazy" />
+          </div>
+          <div style="flex: 1; min-width: 300px;">
+            <h2 style="margin-bottom: 1rem;">Edge AI Processing</h2>
+            <p class="bodyCopy">
+              Ultra-low latency, private processing that works without cloud
+              connectivity. Your data never leaves the device — all AI inference
+              happens locally for maximum privacy and speed.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Feature 5: Voice & Gesture Control -->
+      <div class="expedition-item" style="padding: 2rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">
+        <div class="container" style="display: flex; gap: 2rem; align-items: center; flex-wrap: wrap;">
+          <div style="flex: 1; min-width: 300px;">
+            <h2 style="margin-bottom: 1rem;">Voice & Gesture Control</h2>
+            <p class="bodyCopy">
+              Hands-free operation with natural voice commands and intuitive
+              gestures for seamless interaction. Control your glasses without
+              reaching for buttons — just speak or gesture naturally.
+            </p>
+          </div>
+          <div style="flex: 1; min-width: 300px;">
+            <img src="/images/product/voice.webp" alt="Voice Control" style="width: 100%; border-radius: 8px;"
+              loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Use Cases Section -->
+  <section class="intro">
+    <div class="container">
+      <div class="intro-header">
+        <h2 data-animate-variant="slide" data-animate-on-scroll="true">
+          Built for Every Professional
+        </h2>
+      </div>
+
+      <div class="stats-container">
+        <div class="stat"
+          style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/images/built-for/Field.webp') center/cover no-repeat; min-height: 200px; display: flex; flex-direction: column; justify-content: flex-end;">
+          <div class="stat-copy">
+            <div class="stats-copy-label">
+              <p>Field Technicians</p>
+            </div>
+            <div class="stats-copy-count">
+              <h3>→</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="stat"
+          style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/images/built-for/creators.webp') center/cover no-repeat; min-height: 200px; display: flex; flex-direction: column; justify-content: flex-end;">
+          <div class="stat-copy">
+            <div class="stats-copy-label">
+              <p>Creators & Researchers</p>
+            </div>
+            <div class="stats-copy-count">
+              <h3>→</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="stat"
+          style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/images/built-for/industry.webp') center/cover no-repeat; min-height: 200px; display: flex; flex-direction: column; justify-content: flex-end;">
+          <div class="stat-copy">
+            <div class="stats-copy-label">
+              <p>Industrial Workers</p>
+            </div>
+            <div class="stats-copy-count">
+              <h3>→</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="stat"
+          style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/images/built-for/access.webp') center/cover no-repeat; min-height: 200px; display: flex; flex-direction: column; justify-content: flex-end;">
+          <div class="stat-copy">
+            <div class="stats-copy-label">
+              <p>Accessibility</p>
+            </div>
+            <div class="stats-copy-count">
+              <h3>→</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="intro-copy">
+        <div class="intro-copy-wrapper">
+          <h3>
+            Whether you're fixing machines, translating street signs, or logging
+            your next idea — Kenesis Vision helps you see what really matters.
+            Memory assistance, cognitive support, voice commands, and navigation
+            support for visual impairments.
+          </h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Specs -->
+  <section class="intro" style="padding-top: 0;">
+    <div class="container">
+      <div class="intro-header">
+        <h1 data-animate-variant="slide" data-animate-on-scroll="true">
+          Technical Specifications
+        </h1>
+      </div>
+
+      <div class="stats-container">
+        <div class="stat">
+          <div class="stat-copy">
+            <div class="stats-copy-label">
+              <p>Processing</p>
+            </div>
+            <div class="stats-copy-count">
+              <h3>Edge AI</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="stat">
+          <div class="stat-copy">
+            <div class="stats-copy-label">
+              <p>Privacy</p>
+            </div>
+            <div class="stats-copy-count">
+              <h3>On-Device</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="stat">
+          <div class="stat-copy">
+            <div class="stats-copy-label">
+              <p>Battery</p>
+            </div>
+            <div class="stats-copy-count">
+              <h3>All-Day</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="stat">
+          <div class="stat-copy">
+            <div class="stats-copy-label">
+              <p>Form Factor</p>
+            </div>
+            <div class="stats-copy-count">
+              <h3>Lightweight</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="intro-copy">
+        <div class="intro-copy-wrapper">
+          <h3>
+            Local AI inference with no cloud lag. Battery-optimized models for
+            all-day use. Phone companion app for seamless sync. Durable,
+            lightweight, and discreet design.
+          </h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-bg-container"></div>
+
+      <div class="footer-content">
+        <div class="footer-content-meta">
+          <div class="footer-content-col">
+            <h3>Ready to experience the future?</h3>
+
+            <div class="footer-form">
+              <input type="text" placeholder="Your Email" />
+
+              <div class="btn">
+                <a href="/waitlist.html" class="btn"><span class="btn-line"></span>Join Waitlist</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-content-col">
+            <p class="bodyCopy">
+              Kenesis Labs is a deep tech startup specializing in computer
+              vision and smartglasses technology for assistive tech solutions.
+              Based in Chennai, India, we're building intelligent technology
+              that empowers independence.
+            </p>
+
+            <div class="footer-socials">
+              <div class="footer-social">
+                <a href="https://www.instagram.com/kenesislabs" target="_blank">[ Instagram ]</a>
+              </div>
+              <div class="footer-social">
+                <a href="http://x.com/KenesisLabs" target="_blank">[ Twitter / X ]</a>
+              </div>
+              <div class="footer-social">
+                <a href="https://www.linkedin.com/company/thekenesis" target="_blank">[ LinkedIn ]</a>
+              </div>
+              <div class="footer-social">
+                <a href="mailto:contact@kenesis.in">[ Email ]</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-content-meta">
+          <div class="footer-content-col">
+            <p>[ Chennai, India ]</p>
+            <p>[ contact@kenesis.in ]</p>
+          </div>
+
+          <div class="footer-content-col">
+            <h3>Kenesis&copy;</h3>
+            <p class="footer-copyright-text">Copyright 2026 All Rights Reserved By Kenesis Labs Private Limited</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      if (sessionStorage.getItem("pageTransition") === "true") {
+        let s = document.createElement("style");
+        s.setAttribute("data-transition", "");
+        s.textContent =
+          ".transition-grid{background-color:var(--base-400);pointer-events:auto;}";
+        (document.head || document.documentElement).appendChild(s);
+      }
+    })();
+  </script>
+
+  <script type="module" src="/js/lenis-scroll.js"></script>
+  <script type="module" src="/js/preloader.js"></script>
+  <script type="module" src="/js/nav.js"></script>
+  <script type="module" src="/js/interactive-grid.js"></script>
+  <script type="module" src="/js/transition.js"></script>
+  <script type="module" src="/js/home.js"></script>
+  <script type="module" src="/js/animated-copy.js"></script>
+</body>
+
+</html>

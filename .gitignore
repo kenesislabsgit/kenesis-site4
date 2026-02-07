@@ -1,0 +1,36 @@
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Build output
+dist/
+build/
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# Environment Variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env
+
+# Backend (Python/FastAPI)
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+ken-forms/__pycache__/
+ken-forms/venv/
+ken-forms/.env
+
+# Editor directories
+.idea/
+.vscode/
