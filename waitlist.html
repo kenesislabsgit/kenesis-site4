@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' 'unsafe-eval' data: blob:;">
     <title>Waitlist | Kenesis Vision | Early Access</title>
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
@@ -110,11 +111,14 @@
 
                 <form id="waitlistForm" class="waitlist-form">
                     <div class="waitlist-form-row">
-                        <input type="text" name="name" id="waitlistName" placeholder="Your Name" required />
-                        <input type="email" name="email" id="waitlistEmail" placeholder="Your Email" required />
+                        <input type="text" name="name" id="waitlistName" placeholder="Your Name" required
+                            autocomplete="name" />
+                        <input type="email" name="email" id="waitlistEmail" placeholder="Your Email" required
+                            autocomplete="email" />
                     </div>
                     <div class="waitlist-form-row">
-                        <input type="tel" name="phone" id="waitlistPhone" placeholder="Your Phone Number" required />
+                        <input type="tel" name="phone" id="waitlistPhone" placeholder="Your Phone Number" required
+                            autocomplete="tel" />
                     </div>
                     <div class="waitlist-form-submit">
                         <button type="submit" class="btn btn-teal" id="waitlistSubmit">
@@ -137,7 +141,8 @@
                         <h3>Let's build the future together</h3>
 
                         <div class="footer-form">
-                            <input type="text" placeholder="Your Email" />
+                            <input type="email" id="footerEmailWaitlist" name="email" placeholder="Your Email"
+                                autocomplete="email" />
 
                             <div class="btn">
                                 <a href="/contact" class="btn"><span class="btn-line"></span>Get in Touch</a>

@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' 'unsafe-eval' data: blob:;">
   <title>Contact | Kenesis Vision | Schedule a Demo</title>
   <link rel="icon" href="/favicon.ico" type="image/x-icon" />
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
@@ -134,17 +135,22 @@
         </div>
 
         <div class="contact-form-col">
-          <form id="contactForm" action="mailto:contact@kenesis.in" method="post" enctype="text/plain">
+
+          <div id="contactMessage" class="contact-message"
+            style="display: none; padding: 1rem; margin-bottom: 1rem; border-radius: 4px; text-align: center;"></div>
+
+          <form id="contactForm">
             <div class="form-item">
-              <input type="text" name="name" placeholder="Your Name" required />
+              <input type="text" id="contactName" name="name" placeholder="Your Name" required autocomplete="name" />
             </div>
 
             <div class="form-item">
-              <input type="email" name="email" placeholder="Your Email" required />
+              <input type="email" id="contactEmail" name="email" placeholder="Your Email" required
+                autocomplete="email" />
             </div>
 
             <div class="form-item">
-              <select name="inquiry_type">
+              <select id="contactInquiryType" name="inquiry_type">
                 <option value="demo">Schedule a Demo</option>
                 <option value="manufacturing">Manufacturing Solutions</option>
                 <option value="field_service">Field Service Operations</option>
@@ -157,7 +163,7 @@
 
             <div class="form-item">
               <div class="btn">
-                <button type="submit" class="btn btn-teal">
+                <button type="submit" id="contactSubmit" class="btn btn-teal">
                   <span class="btn-line"></span>Submit
                 </button>
               </div>
@@ -359,6 +365,7 @@
   <script type="module" src="/js/home.js"></script>
   <script type="module" src="/js/faq.js"></script>
   <script type="module" src="/js/animated-copy.js"></script>
+  <script type="module" src="/js/contact.js"></script>
   <script type="module" src="/js/waitlist.js"></script>
 </body>
 
